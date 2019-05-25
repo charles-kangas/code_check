@@ -10,3 +10,5 @@ repos:
         types:
           - python
     repo: local
+default_language_version:
+    python: python3.7
