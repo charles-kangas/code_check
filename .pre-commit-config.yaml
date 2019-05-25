@@ -1,5 +1,12 @@
-exclude: '^$'
-fail_fast: true
+---
 repos:
--   repo: https://github.com/charles-kangas/code_check.git
-
+  -
+    hooks:
+      -
+        entry: "python -m pylint.__main__"
+        id: pylint
+        language: system
+        name: pylint
+        types:
+          - python
+    repo: local
